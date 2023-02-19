@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "청담 Skill Practice 해킹",
+    "version": "1.0",
+    "description": "청담어학원 Skill Practice의 답을 가져옵니다.",
+    
+    "content_scripts": [
+      {
+        "matches": ["https://il.chungdahm.com/?std_id=*&sem_id=*&top_cors_id=*&cid=*&g_seq=*&isTest=Y"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+      }
+    ],
+    
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab"
+    ]
+    
+}
+  
